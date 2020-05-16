@@ -1,12 +1,15 @@
 function greetPeople(people) {
-  var greeting = "Hello ";
+  const greeting = "Hello ";
 
-  people.forEach(function(person) {
-    greeting = greeting + person;
+  people.forEach(function (person) {
+    console.log(greeting + person);
   });
 
   return greeting;
 }
+
+let mentors = ["Irina", "Ashleigh", "Etza"];
+let result = greetPeople(mentors);
 
 /*
   Let's trace this piece of code - what is the value of result with this input
